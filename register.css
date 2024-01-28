@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Permanent+Marker&display=swap');
+/* From Google Fonts */
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+img,
+a,
+small,
+center,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+color palette generator : https://coolors.co/e42548-ee969c-e0c190-796753 
+Color palette:-
+>> azul >> #236db7 (blue) >> rgba(35, 109, 183, 1)
+>> chocolate cosmos (dark purple) >> #491d29 >> rgba(73, 29, 41, 1)
+>> cadet gray (light gray) >> #9bacbf >> rgba(155, 172, 191, 1)
+>> charcoal (dark blue) >> #344a5b >> rgba(52, 74, 91, 1)
+>> very light blue almost white >> #cde3c9 >> rgba(205, 227, 201, 1)
+>> air force blue (light blue) >> #6c879d >> rgba(108, 135, 157, 1)
+*/
+
+/* Converting to RGBA or you can just download the color palette from the colors generator as rgb
+I used https://rgbacolorpicker.com/hex-to-rgba 
+to convert HEX to RGBA when I want to control the opacity 
+of the background without affecting the words that are written inside that element
+*/
+
+/*i used format document option for each css document*/
+
+body {
+  box-sizing: border-box;
+  background-image: url("../CapyImages/light\ gray\ background.png");
+  background-repeat: no-repeat;
+  /* Prevent the background image from repeating */
+  background-size: cover;
+  /* Cover the entire background, maintaining aspect ratio */
+}
+
+.navbar {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  background: rgba(155, 172, 191, 1);
+  background: linear-gradient(180deg, rgba(108, 135, 157, 0.4) 34%, rgba(73, 29, 41, 0.7) 100%);
+  border-bottom: 2px solid rgba(73, 29, 41, 1);
+}
+
+nav img {
+  height: 120px;
+  width: 120px;
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+.container-fluid .navbar-brand {
+  color: rgba(73, 29, 41, 1);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: #cde3c9;
+}
+
+.offcanvas-title#offcanvasNavbarLabel {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: #344a5b;
+}
+
+.offcanvas-body .navbar-nav .nav-item .nav-link {
+  color: #344a5b;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(73, 29, 41, 0.8);
+}
+
+nav h1 {
+  /*from google fonts*/
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgba(73, 29, 41, 1);
+}
+
+.offcanvas-header,
+.offcanvas-body {
+  background-color: rgba(155, 172, 191, 1);
+}
+
+.container-fluid .navbar-toggler {
+  background-color: #344a5b;
+}
+
+.offcanvas-header .btn-close {
+  background-color: rgba(73, 29, 41, 1);
+  /* Set the background color */
+  border: 1px solid #cde3c9;
+  /* Set the border color */
+}
+
+/* Optionally, you can add hover styles for better user interaction */
+.offcanvas-header .btn-close:hover {
+  color: #cde3c9;
+  /* Set hover text (icon) color */
+  background-color: rgba(73, 29, 41, 1);
+  /* Set hover background color */
+  border: 1px solid #cde3c9;
+  /* Set hover border color */
+}
+
+.offcanvas-body .nav-item .dropdown-menu {
+  background-color: rgba(73, 29, 41, 0.5);
+}
+
+.offcanvas-body .nav-item .dropdown-menu .dropdown-item {
+  color: rgba(73, 29, 41, 1);
+  font-weight: bold;
+}
+
+.offcanvas-body .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(155, 172, 191, 1);
+}
+
+form {
+  display: grid;
+  grid-column: auto;
+  text-align: center;
+  align-items: center;
+  /*to Align items vertically in the center */
+  justify-content: center;
+  /* center the textfields horizontally */
+}
+
+/* to style the textfields */
+form .name .username input,
+form .details .EmailPass input,
+form .address input,
+form .place .city input,
+form .place .zipcode input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #cde3c9;
+  border-radius: 5px;
+  background: rgba(73, 29, 41, 0.4);
+  color: #cde3c9;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/*placeholders for each textfield*/
+form .name .username ::placeholder,
+form .details .EmailPass ::placeholder,
+form .address ::placeholder,
+form .place .city ::placeholder,
+form .place .zipcode ::placeholder {
+  color: rgba(155, 172, 191, 1);
+  font-weight: bold;
+}
+
+/*labels*/
+form .name .username label,
+form .details .EmailPass label,
+form .address label,
+form .place .city label,
+form .place .zipcode label {
+  color: #cde3c9;
+  font-weight: bold;
+}
+
+.paymentDetalis legend {
+  color: #cde3c9;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.payment1,
+.payment2 {
+  color: #491d29;
+  font-weight: bold;
+  accent-color: #6c879d;
+}
+
+
+.submitBtn {
+  text-align: center;
+  background-color: #6c879d;
+  border: 2px solid #cde3c9;
+  color: #cde3c9;
+  font-size: 20px;
+  height: 40px;
+  width: 120px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.submitBtn:hover {
+  background-color: #491d29;
+  border-color: #491d29;
+  color: #cde3c9;
+}
+
+.lastStep label {
+  color: #cde3c9;
+  font-weight: bold;
+}
+
+.lastStep input {
+  accent-color: #491d29;
+}
+
+footer hr {
+  border: 2px solid;
+  border-color: #cde3c9;
+  /* border:2px solid #cde3c9; gives the same output also*/
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  color: #cde3c9;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+}
+
+.containerFooter {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerFooter img {
+  height: 190px;
+  width: 170px;
+  object-fit: cover;
+  border: 4px solid #cde3c9;
+  margin: 20px 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: auto;
+  }
+
+  .navbar img {
+    margin-left: 10%;
+  }
+
+  .container-fluid .navbar-brand {
+    font-size: 20px;
+  }
+
+  nav h1 {
+    font-size: 20px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .offcanvas-title#offcanvasNavbarLabel {
+    font-size: 30px;
+  }
+
+  .offcanvas-body .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+
+  .product1,
+  .product2,
+  .product3,
+  .product4,
+  .product5,
+  .product6,
+  .product7,
+  .product8,
+  .product9,
+  .product10,
+  .product11,
+  .product12 {
+    max-width: 100%;
+    margin: 10px 5px;
+  }
+
+  .product1 img,
+  .product2 img,
+  .product3 img,
+  .product4 img,
+  .product5 img,
+  .product6 img,
+  .product7 img,
+  .product8 img,
+  .product9 img,
+  .product10 img,
+  .product11 img,
+  .product12 img {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  footer img {
+    height: 100px;
+    width: 90px;
+    margin: 10px 15px;
+  }
+
+}
