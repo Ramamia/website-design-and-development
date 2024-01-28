@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Permanent+Marker&display=swap');
+/* From Google Fonts */
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+img,
+a,
+small,
+center,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+color palette generator : https://coolors.co/e42548-ee969c-e0c190-796753 
+Color palette:-
+>> azul >> #236db7 (blue) >> rgba(35, 109, 183, 1)
+>> chocolate cosmos (dark purple) >> #491d29 >> rgba(73, 29, 41, 1)
+>> cadet gray (light gray) >> #9bacbf >> rgba(155, 172, 191, 1)
+>> charcoal (dark blue) >> #344a5b >> rgba(52, 74, 91, 1)
+>> very light blue almost white >> #cde3c9 >> rgba(205, 227, 201, 1)
+>> air force blue (light blue) >> #6c879d >> rgba(108, 135, 157, 1)
+*/
+
+/* Converting to RGBA or you can just download the color palette from the colors generator as rgb
+I used https://rgbacolorpicker.com/hex-to-rgba 
+to convert HEX to RGBA when I want to control the opacity 
+of the background without affecting the words that are written inside that element
+*/
+
+/*i used format document option for each css document*/
+
+body {
+  box-sizing: border-box;
+  background-image: url("../CapyImages/light\ gray\ background.png");
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Cover the entire background, maintaining aspect ratio */
+}
+
+.navbar{
+  position:relative;
+  width:100vw;
+  height:200px;
+  background: rgba(155, 172, 191, 1);
+  background: linear-gradient(180deg, rgba(108, 135, 157, 0.4) 34%, rgba(73, 29, 41, 0.7) 100%);
+  border-bottom: 2px solid rgba(73, 29, 41, 1);
+}
+
+nav img{
+  height:120px;
+  width:120px;
+  margin-left:20%;
+  cursor: pointer;
+}
+
+.container-fluid .navbar-brand{
+  color:rgba(73, 29, 41, 1);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.container-fluid .navbar-brand:hover{
+  color:#cde3c9;
+}
+
+.offcanvas-title#offcanvasNavbarLabel {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: #344a5b;
+}
+
+.offcanvas-body .navbar-nav .nav-item .nav-link {
+  color: #344a5b;
+  font-weight: bold;
+  font-size:20px;
+}
+
+.offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(73, 29, 41, 0.8);
+}
+
+nav h1 {
+  /*from google fonts*/
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgba(73, 29, 41, 1);
+}
+
+.offcanvas-header ,.offcanvas-body{
+  background-color: rgba(155, 172, 191, 1);
+}
+
+.container-fluid .navbar-toggler{
+ background-color: #344a5b; 
+}
+
+.offcanvas-header .btn-close {
+  background-color: rgba(73, 29, 41, 1); /* Set the background color */
+  border: 1px solid #cde3c9; /* Set the border color */
+}
+
+/* Optionally, you can add hover styles for better user interaction */
+.offcanvas-header .btn-close:hover {
+  color: #cde3c9; /* Set hover text (icon) color */
+  background-color: rgba(73, 29, 41, 1); /* Set hover background color */
+  border: 1px solid #cde3c9; /* Set hover border color */
+}
+
+.offcanvas-body .nav-item .dropdown-menu {
+  background-color: rgba(73, 29, 41, 0.5);
+}
+
+.offcanvas-body .nav-item .dropdown-menu .dropdown-item{
+  color:rgba(73, 29, 41, 1);
+  font-weight: bold;
+}
+
+.offcanvas-body .nav-item .dropdown-menu .dropdown-item:hover{
+  background-color: rgba(155, 172, 191, 1);
+}
+
+.HahaContainer {
+  margin: 80px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(145, 151, 174, 1);
+  background: radial-gradient(circle, rgba(145, 151, 174, 0.8) 59%, rgba(39, 48, 67, 0.9) 100%);
+  border: 4px solid rgba(73, 29, 41, 1);
+}
+
+.CartInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #cde3c9;
+  background: rgba(73, 29, 41, 1);
+  font-weight: bold;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 60px;
+  height: 25px;
+  padding: 5px;
+}
+
+td a {
+  color: #cde3c9;
+  font-size: 19px;
+}
+
+td p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(73, 29, 41, 1);
+  font-size:20px;
+}
+
+td img {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  border: 4px solid #344a5b;
+}
+
+.remove{
+  color:#cde3c9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.update{
+  background-color: rgba(39, 48, 67, 0.9);
+  font-weight: bold;
+  border: 3px solid #cde3c9;
+  color:#cde3c9;
+  cursor: pointer;
+}
+
+.TotalPrice {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.TotalPrice table {
+  border-top: 2px solid #cde3c9;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child {
+  text-align: right;
+  color: #cde3c9;
+  font-weight: bold;
+  font-size: 20psx;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+input {
+  background-color: rgba(73, 29, 41, 0.7);
+  color: #cde3c9;
+  font-weight: bold;
+  border: 2px solid #cde3c9;
+}
+
+.TotalPrice td:first-child {
+  color: #cde3c9;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+footer {
+  /*css gradient using three colors from the color palette*/
+  background: rgba(73, 29, 41, 1);
+  background: linear-gradient(183deg, rgba(73, 29, 41, 1) 11%, rgba(145, 151, 174, 0.7) 76%, rgba(52, 74, 91, 0.5) 100%);
+  color: #9bacbf;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.footer-container div {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.footer-container a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(73, 29, 41, 1);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-container i {
+  font-size: 20px;
+  color: rgba(73, 29, 41, 1);
+  margin-left: 10px;
+
+}
+
+.footer-container a:hover {
+  color: #cde3c9;
+  text-decoration: none;
+}
+
+.footer-container i:hover {
+  color: #cde3c9;
+  text-decoration: none;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.footer-container li {
+  margin-bottom: 5px;
+}
