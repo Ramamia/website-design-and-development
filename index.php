@@ -41,6 +41,7 @@ if(isset($_SESSION['privilleged'])){
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!--google fonts -->
   <script src="https://kit.fontawesome.com/2315d357ec.js" crossorigin="anonymous"></script> <!-- for the icons -->
+  <meta name="google-site-verification" content="ja4-SEC8VJsVJ1p4wXb1n2wYYDepnjq62hNlGdKVbXc" />
 </head>
 
 <body>
